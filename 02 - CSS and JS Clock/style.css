@@ -1,5 +1,5 @@
 html {
-    background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://picsum.photos/2560/1440/?random);
     background-size: cover;
     font-family: 'helvetica neue';
     text-align: center;
@@ -18,7 +18,8 @@ body {
 .clock {
     width: 30rem;
     height: 30rem;
-    border: 20px solid white;
+    color: rgb(255, 255, 255);
+    border: 15px solid white;
     border-radius: 50%;
     margin: 50px auto;
     position: relative;
@@ -34,14 +35,71 @@ body {
     /* account for the height of the clock hands */
 }
 
+.clock-face .number {
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    transform: rotate(var(--rotation));
+}
+
+.clock-face .number1 {
+    --rotation: 30deg;
+}
+
+.clock-face .number2 {
+    --rotation: 60deg;
+}
+
+.clock-face .number3 {
+    --rotation: 90deg;
+}
+
+.clock-face .number4 {
+    --rotation: 120deg;
+}
+
+.clock-face .number5 {
+    --rotation: 150deg;
+}
+
+.clock-face .number6 {
+    --rotation: 180deg;
+}
+
+.clock-face .number7 {
+    --rotation: 210deg;
+}
+
+.clock-face .number8 {
+    --rotation: 240deg;
+}
+
+.clock-face .number9 {
+    --rotation: 270deg;
+}
+
+.clock-face .number10 {
+    --rotation: 300deg;
+}
+
+.clock-face .number11 {
+    --rotation: 330deg;
+}
+
+.clock-face .number12 {
+    --rotation: 360deg;
+}
+
 .hand {
     width: 50%;
     height: 6px;
-    background: black;
+    background: white;
     position: absolute;
     top: 50%;
     transform-origin: 100%;
     transform: rotate(90deg);
-    transition: all 0.05s;
+    /* transition: all 0.05s; */
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
