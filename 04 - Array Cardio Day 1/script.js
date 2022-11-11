@@ -72,3 +72,12 @@ console.log(alpha);
 // 8. Reduce Exercise
 // Sum up the instances of each of these
 const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
+const transportation = data.reduce(function(object, item) {
+    if (!object[item]) {
+        object[item] = 0;
+    } else
+        object[item]++;
+    return object;
+}, {});
+
+console.log(transportation);
