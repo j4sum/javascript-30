@@ -46,4 +46,8 @@
     <td>10</td>
     <td>Hold Shift to Check Multiple Checkboxes</td>
   </tr>
+   <tr>
+    <td>10</td>
+    <td>Custom HTML5 Video player</td>
+  </tr>
 </table>
