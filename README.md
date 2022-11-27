@@ -47,7 +47,11 @@
     <td>Hold Shift to Check Multiple Checkboxes</td>
   </tr>
    <tr>
-    <td>10</td>
-    <td>Custom HTML5 Video player</td>
+    <td>11</td>
+    <td>Custom HTML5 Video Player</td>
+  </tr>
+   <tr>
+    <td>12</td>
+    <td>Key Sequence Detection (Konami Code)</td>
   </tr>
 </table>
