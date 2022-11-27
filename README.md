@@ -54,4 +54,8 @@
     <td>12</td>
     <td>Key Sequence Detection (Konami Code)</td>
   </tr>
+  <tr>
+    <td>13</td>
+    <td>Slide in on scroll</td>
+  </tr>
 </table>
