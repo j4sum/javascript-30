@@ -10,13 +10,13 @@
 
 <body>
     <script>
-        const pressed = [];
-        const secretCode = 'jasum';
+        const pressed = []; //push pressed items in an array
+        const secretCode = 'jasum'; //look for word jasum
         window.addEventListener('keyup', (e) => {
             console.log(e.key);
             pressed.push(e.key); //push into array
             pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length); //pushes the first letter that was pushed into the array
-            if (pressed.join('').includes(secretCode)) {
+            if (pressed.join('').includes(secretCode)) { //contains array we are looking for
                 console.log('DING DING!');
                 cornify_add();
             }
