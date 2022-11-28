@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    background: #ffc600;
+    background: #753d96;
     font-family: 'helvetica neue';
     font-size: 20px;
     font-weight: 200;
@@ -54,4 +54,5 @@ h1 {
 .slide-in.active {
     opacity: 1;
     transform: translateX(0%) scale(1);
+    /* scale 1 is 100 */
 }
