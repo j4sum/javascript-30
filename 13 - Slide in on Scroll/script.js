@@ -1,4 +1,4 @@
-function debounce(func, wait = 20, immediate = true) {
+function debounce(func, wait = 20, immediate = true) { // runs every 20 ms to limit CPU cycles
     var timeout;
     return function() {
         var context = this,
@@ -13,3 +13,26 @@ function debounce(func, wait = 20, immediate = true) {
         if (callNow) func.apply(context, args);
     };
 }
+
+const sliderImages = document.querySelectorAll('.slide-in'); // select all images
+
+function checkSlide(e) { // runs every time user scrolls
+    //console.count(e);
+    sliderImages.forEach(sliderImage => {
+        // halfway through the image
+        const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
+        // console.log(slideInAt);
+        // bottom of the image
+        const imageBottom = sliderImage.offsetTop + sliderImage.height; // top of image how far from top of window, pixel level of how far down it is
+        const isHalfShown = slideInAt > sliderImage.offsetTop;
+        const isNotScrolledPast = window.scrollY < imageBottom;
+        if (isHalfShown && isNotScrolledPast) {
+            sliderImage.classList.add('active');
+        } else {
+            sliderImage.classList.remove('active');
+        }
+
+    });
+}
+
+window.addEventListener('scroll', debounce(checkSlide, 500)); // when window is scrolled, run checkSlide
