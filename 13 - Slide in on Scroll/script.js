@@ -20,7 +20,7 @@ function checkSlide(e) { // runs every time user scrolls
     //console.count(e);
     sliderImages.forEach(sliderImage => {
         // halfway through the image
-        const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
+        const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2; // pixel level when scrolled down
         // console.log(slideInAt);
         // bottom of the image
         const imageBottom = sliderImage.offsetTop + sliderImage.height; // top of image how far from top of window, pixel level of how far down it is
