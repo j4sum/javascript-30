@@ -16,7 +16,7 @@
             console.log(e.key);
             pressed.push(e.key); //push into array
             pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length); //pushes the first letter that was pushed into the array
-            if (pressed.join('').includes(secretCode)) { //contains array we are looking for
+            if (pressed.join('').includes(secretCode)) { // find if it contains array we are looking for
                 console.log('DING DING!');
                 cornify_add();
             }
