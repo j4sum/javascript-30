@@ -58,4 +58,8 @@
     <td>13</td>
     <td>Slide in on scroll</td>
   </tr>
+   <tr>
+    <td>14</td>
+    <td>JavaScript Reference VS Copying</td>
+  </tr>
 </table>
