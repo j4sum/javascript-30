@@ -62,4 +62,12 @@
     <td>14</td>
     <td>JavaScript Reference VS Copying</td>
   </tr>
+  <tr>
+    <td>15</td>
+    <td>Local Storage and Event Delegation</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>CSS Text Shadow Mouse Move Effect</td>
+  </tr>
 </table>
