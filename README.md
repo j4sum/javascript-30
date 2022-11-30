@@ -1,4 +1,4 @@
-# javascript-30
+# My solutions to javascript-30
 
 
 <table>
