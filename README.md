@@ -70,4 +70,20 @@
     <td>16</td>
     <td>CSS Text Shadow Mouse Move Effect</td>
   </tr>
+  <tr>
+    <td>17</td>
+    <td>Sorting Band Names Without Articles</td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>Tally String Times With Reduce</td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>Unreal Webcam Fun</td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>Native Speech Recognition</td>
+  </tr>
 </table>
